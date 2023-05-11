@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <h1><%= @list.name %></h1>
+        <% @movies.each do |e| %>
+         <ul class = "border"> <%= e.title %> </ul>
+         <ul class = "border"> <%= e.overview %> </ul>
+           <ul class = "border"> <%= e.rating %> </ul>
+          <% end %>
+      <table class="table table-bordered">
+
+        <ul> <%= link_to "Add movies", new_list_bookmark_path(@list) %> </ul>
+      <ul> <%= link_to "See all list", lists_path %> </ul>
+    </div>
+  </div>
+</div>
