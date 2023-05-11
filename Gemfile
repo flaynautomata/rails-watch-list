@@ -33,6 +33,10 @@ gem 'rspec-rails', group: [ :test ]
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
+gem "autoprefixer-rails"
+gem "font-awesome-sass", "~> 6.1"
+gem "simple_form"
+gem "sassc-rails"
 
 gem 'rails-controller-testing', group: [ :test ]
 
@@ -66,3 +70,5 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
+gem 'rspec-rails', group: [ :test ]
+gem 'rails-controller-testing', group: [ :test ]
